@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&family=Manrope:wght@200..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #000;
+}
+
+canvas {
+    background-color: #000;
+    transition: 3s;
+}
+
+h1 {
+    color: white;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 75px;
+    opacity: 0;
+    filter: drop-shadow(0 0 10px white);
+    transition: 5s;
+    font-family: "Fuzzy Bubbles", serif;
+}
+
+p {
+    color: white;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Manrope', sans-serif;
+    font-size: 40px;
+    transition: .3s;
+    text-align: center;
+}
+
+p.lyrics {
+    position: absolute;
+    top: 50px; left: 50px;
+    transform: none;
+    transition: opacity 1s;
+    color: #9a9a9a;
+    max-width: 500px;
+    text-align: left;
+}
