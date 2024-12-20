@@ -1,8 +1,15 @@
+if (window.innerWidth < window.innerHeight) {
+    document.querySelector('p.text').innerText = 'Кажется, на таком разрешении экрана работать не будет';
+    document.querySelector('canvas').remove();
+    document.querySelector('h1').remove();
+    document.querySelector('p.lyrics').remove();
+}
+
 var canvas = document.querySelector('canvas');
 var ctx = canvas.getContext('2d');
 
 var lbl = document.querySelector('h1');
-var text = document.querySelector('p');
+var text = document.querySelector('p.text');
 var allowed = false;
 var step = 0;
 
@@ -119,8 +126,7 @@ function startFirework() {
 document.addEventListener('click', startFirework);
 
 window.addEventListener('resize', () => {
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
+    location.href = location.href;
 }); 
 
 function generatePoints(startPoint, specialColor=null) {
