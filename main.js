@@ -6,7 +6,7 @@ var text = document.querySelector('p');
 var allowed = false;
 var step = 0;
 
-var music = new Audio('music.wav');
+var music = new Audio('https://github.com/eledays/3/blob/main/music.wav');
 var lyrics = document.querySelector('p.lyrics');
 
 let endStarted = false;
@@ -92,7 +92,7 @@ function startFirework() {
         }, 3000);
     }
 
-    let startSound = new Audio('start.wav');
+    let startSound = new Audio('https://github.com/eledays/3/blob/main/start.wav');
     startSound.play();
 
     mainPoints.push(
@@ -108,7 +108,7 @@ function startFirework() {
     );
 
     setTimeout(() => {
-        let boomSound = new Audio('boom.wav');
+        let boomSound = new Audio('https://github.com/eledays/3/blob/main/boom.wav');
         boomSound.play();
         const iId = setInterval(generatePoints, 5, mainPoints[0]);
         mainPoints.splice(0, 1);
